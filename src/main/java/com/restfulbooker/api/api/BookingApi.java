@@ -1,6 +1,6 @@
 package com.restfulbooker.api.api;
 
-import com.restfulbooker.api.payloads.lombok.Booking;
+import com.restfulbooker.models.request.Booking;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;

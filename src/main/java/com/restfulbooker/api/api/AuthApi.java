@@ -1,6 +1,6 @@
 package com.restfulbooker.api.api;
 
-import com.restfulbooker.api.payloads.Auth;
+import com.restfulbooker.models.request.Auth;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;

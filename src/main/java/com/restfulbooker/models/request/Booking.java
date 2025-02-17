@@ -1,4 +1,4 @@
-package com.restfulbooker.api.payloads.lombok;
+package com.restfulbooker.models.request;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;

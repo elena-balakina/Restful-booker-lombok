@@ -2,7 +2,7 @@ package com.restfulbooker.api;
 
 import com.restfulbooker.api.api.AuthApi;
 import com.restfulbooker.api.config.Config;
-import com.restfulbooker.api.payloads.Auth;
+import com.restfulbooker.models.request.Auth;
 import io.restassured.response.Response;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.Assertions;
@@ -15,9 +15,9 @@ public class ApiAuthTest {
         String username = Config.getProperty("username");
         String password = Config.getProperty("password");
 
-        Auth auth = new Auth.Builder()
-                .setUsername(username)
-                .setPassword(password)
+        Auth auth = Auth.builder()
+                .username(username)
+                .password(password)
                 .build();
         Response response = AuthApi.postAuth(auth);
         Approvals.verify(response.getStatusCode());
@@ -30,9 +30,9 @@ public class ApiAuthTest {
         String username = Config.getProperty("username");
         String password = "invalid-password";
 
-        Auth auth = new Auth.Builder()
-                .setUsername(username)
-                .setPassword(password)
+        Auth auth = Auth.builder()
+                .username(username)
+                .password(password)
                 .build();
         Response response = AuthApi.postAuth(auth);
         String reasonInResponse = response.getBody().jsonPath().get("reason").toString();

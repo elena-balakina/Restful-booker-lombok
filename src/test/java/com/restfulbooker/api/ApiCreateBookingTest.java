@@ -1,9 +1,9 @@
 package com.restfulbooker.api;
 
 import com.restfulbooker.api.api.BookingApi;
-import com.restfulbooker.api.payloads.BookingResponse;
-import com.restfulbooker.api.payloads.lombok.Booking;
-import com.restfulbooker.api.payloads.lombok.BookingDates;
+import com.restfulbooker.models.request.Booking;
+import com.restfulbooker.models.request.BookingDates;
+import com.restfulbooker.models.response.BookingResponse;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

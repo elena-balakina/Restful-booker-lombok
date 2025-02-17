@@ -1,10 +1,7 @@
-package com.restfulbooker.api.payloads.lombok;
-
+package com.restfulbooker.models.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
-
-import java.util.Date;
 
 @Builder
 @Getter
@@ -13,9 +10,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class BookingDates {
+public class AuthResponse {
 
-    private Date checkin = new Date();
-    private Date checkout = new Date();
-
+    private String token;
 }
