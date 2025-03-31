@@ -1,12 +1,12 @@
 {
-  "uid" : "d65ee7b0daf263f1",
-  "name" : "Создание нового бронирования",
-  "fullName" : "com.restfulbooker.api.ApiCreateBookingTest.postBookingAndGetBooking",
-  "historyId" : "4fe2f1ed7043e780ffcbf6bd1bfff849",
+  "uid" : "cc5a35981f85c69d",
+  "name" : "Авторизация с валидными данными",
+  "fullName" : "com.restfulbooker.api.ApiAuthTest.authApiShouldReturnToken",
+  "historyId" : "11627492afa0c1868f7707026f8f26b",
   "time" : {
-    "start" : 1743446528086,
-    "stop" : 1743446528918,
-    "duration" : 832
+    "start" : 1743446869654,
+    "stop" : 1743446872444,
+    "duration" : 2790
   },
   "description" : "",
   "status" : "passed",
@@ -16,19 +16,19 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "story",
-    "value" : "Positive Booking Creation"
+    "value" : "Positive Authentication"
   }, {
     "name" : "epic",
     "value" : "Booking API"
   }, {
     "name" : "feature",
-    "value" : "Create Booking"
+    "value" : "Authentication"
   }, {
     "name" : "host",
-    "value" : "fv-az1701-508"
+    "value" : "fv-az1912-887"
   }, {
     "name" : "thread",
-    "value" : "1955@fv-az1701-508.main(1)"
+    "value" : "2010@fv-az1912-887.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -37,16 +37,16 @@
     "value" : "java"
   }, {
     "name" : "package",
-    "value" : "com.restfulbooker.api.ApiCreateBookingTest"
+    "value" : "com.restfulbooker.api.ApiAuthTest"
   }, {
     "name" : "testClass",
-    "value" : "com.restfulbooker.api.ApiCreateBookingTest"
+    "value" : "com.restfulbooker.api.ApiAuthTest"
   }, {
     "name" : "testMethod",
-    "value" : "postBookingAndGetBooking"
+    "value" : "authApiShouldReturnToken"
   }, {
     "name" : "suite",
-    "value" : "com.restfulbooker.api.ApiCreateBookingTest"
+    "value" : "com.restfulbooker.api.ApiAuthTest"
   }, {
     "name" : "severity",
     "value" : "critical"
@@ -64,6 +64,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d65ee7b0daf263f1.json",
+  "source" : "cc5a35981f85c69d.json",
   "parameterValues" : [ ]
 }

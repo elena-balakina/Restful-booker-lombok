@@ -1,12 +1,12 @@
 {
-  "uid" : "330a14ea6472458f",
-  "name" : "Получение списка бронирований",
-  "fullName" : "com.restfulbooker.api.ApiStatusCodeTest.getBookingShouldReturn200",
-  "historyId" : "c4e40dae146043e44e30629035784b53",
+  "uid" : "335b7743431c23ba",
+  "name" : "Создание нового бронирования",
+  "fullName" : "com.restfulbooker.api.ApiCreateBookingTest.postBookingAndGetBooking",
+  "historyId" : "4fe2f1ed7043e780ffcbf6bd1bfff849",
   "time" : {
-    "start" : 1743446528926,
-    "stop" : 1743446529323,
-    "duration" : 397
+    "start" : 1743446872583,
+    "stop" : 1743446872782,
+    "duration" : 199
   },
   "description" : "",
   "status" : "passed",
@@ -15,20 +15,20 @@
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Get Bookings"
-  }, {
     "name" : "story",
-    "value" : "Positive Get Bookings"
+    "value" : "Positive Booking Creation"
   }, {
     "name" : "epic",
     "value" : "Booking API"
   }, {
+    "name" : "feature",
+    "value" : "Create Booking"
+  }, {
     "name" : "host",
-    "value" : "fv-az1701-508"
+    "value" : "fv-az1912-887"
   }, {
     "name" : "thread",
-    "value" : "1955@fv-az1701-508.main(1)"
+    "value" : "2010@fv-az1912-887.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -37,16 +37,16 @@
     "value" : "java"
   }, {
     "name" : "package",
-    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
+    "value" : "com.restfulbooker.api.ApiCreateBookingTest"
   }, {
     "name" : "testClass",
-    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
+    "value" : "com.restfulbooker.api.ApiCreateBookingTest"
   }, {
     "name" : "testMethod",
-    "value" : "getBookingShouldReturn200"
+    "value" : "postBookingAndGetBooking"
   }, {
     "name" : "suite",
-    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
+    "value" : "com.restfulbooker.api.ApiCreateBookingTest"
   }, {
     "name" : "severity",
     "value" : "critical"
@@ -64,6 +64,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "330a14ea6472458f.json",
+  "source" : "335b7743431c23ba.json",
   "parameterValues" : [ ]
 }

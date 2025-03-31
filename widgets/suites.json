@@ -4,10 +4,10 @@
     "uid" : "4833e99588a46e4e7a2c38c3e6733f82",
     "name" : "com.restfulbooker.api.ApiStatusCodeTest",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 3,
       "unknown" : 0,
       "total" : 5
     }

@@ -1,81 +1,81 @@
 [ {
-  "uid" : "d65ee7b0daf263f1",
-  "name" : "Создание нового бронирования",
-  "time" : {
-    "start" : 1743446528086,
-    "stop" : 1743446528918,
-    "duration" : 832
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "35b939812f5edacd",
-  "name" : "Получение бронирования по Id с невалидным media type",
-  "time" : {
-    "start" : 1743446529326,
-    "stop" : 1743446529706,
-    "duration" : 380
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "efe2d80c4f8f5e92",
-  "name" : "Создание бронирования с валидными данными",
-  "time" : {
-    "start" : 1743446529709,
-    "stop" : 1743446530114,
-    "duration" : 405
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "ef6c2a8d33e0262c",
-  "name" : "Удаление бронирования по Id",
-  "time" : {
-    "start" : 1743446530117,
-    "stop" : 1743446531267,
-    "duration" : 1150
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "fa7a33a94755f83e",
-  "name" : "Авторизация с невалидным паролем",
-  "time" : {
-    "start" : 1743446527680,
-    "stop" : 1743446528067,
-    "duration" : 387
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "b1abffc42c813f0f",
-  "name" : "Авторизация с валидными данными",
-  "time" : {
-    "start" : 1743446525447,
-    "stop" : 1743446527648,
-    "duration" : 2201
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "330a14ea6472458f",
+  "uid" : "10255a2704faed97",
   "name" : "Получение списка бронирований",
   "time" : {
-    "start" : 1743446528926,
-    "stop" : 1743446529323,
-    "duration" : 397
+    "start" : 1743446872803,
+    "stop" : 1743446872962,
+    "duration" : 159
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "4631672065cda408",
-  "name" : "Получение бронирования по Id",
+  "uid" : "335b7743431c23ba",
+  "name" : "Создание нового бронирования",
   "time" : {
-    "start" : 1743446531269,
-    "stop" : 1743446531661,
-    "duration" : 392
+    "start" : 1743446872583,
+    "stop" : 1743446872782,
+    "duration" : 199
   },
   "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5b953d82da5699ff",
+  "name" : "Создание бронирования с валидными данными",
+  "time" : {
+    "start" : 1743446873062,
+    "stop" : 1743446873141,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7092c12b200d1cf",
+  "name" : "Получение бронирования по Id",
+  "time" : {
+    "start" : 1743446873351,
+    "stop" : 1743446873433,
+    "duration" : 82
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "accadc36f9726c71",
+  "name" : "Удаление бронирования по Id",
+  "time" : {
+    "start" : 1743446873145,
+    "stop" : 1743446873348,
+    "duration" : 203
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "cc5a35981f85c69d",
+  "name" : "Авторизация с валидными данными",
+  "time" : {
+    "start" : 1743446869654,
+    "stop" : 1743446872444,
+    "duration" : 2790
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7ae2993637eb5a87",
+  "name" : "Авторизация с невалидным паролем",
+  "time" : {
+    "start" : 1743446872483,
+    "stop" : 1743446872571,
+    "duration" : 88
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a01b591a11ca4e5c",
+  "name" : "Получение бронирования по Id с невалидным media type",
+  "time" : {
+    "start" : 1743446872966,
+    "stop" : 1743446873046,
+    "duration" : 80
+  },
+  "status" : "failed",
   "severity" : "critical"
 } ]

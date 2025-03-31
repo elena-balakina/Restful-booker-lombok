@@ -1,5 +1,43 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Expected status code is 418, but found 404 ==> expected: <418> but was: <404>",
+      "children" : [ {
+        "name" : "Получение бронирования по Id с невалидным media type",
+        "uid" : "a01b591a11ca4e5c",
+        "parentUid" : "60ad0d98e8491958a29f5eaba9a7f9cb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1743446872966,
+          "stop" : 1743446873046,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "60ad0d98e8491958a29f5eaba9a7f9cb"
+    }, {
+      "name" : "expected: <200\n> but was: <404\n>",
+      "children" : [ {
+        "name" : "Получение бронирования по Id",
+        "uid" : "7092c12b200d1cf",
+        "parentUid" : "c6bd4b68d7e05b7c4b74fd799a15ac98",
+        "status" : "failed",
+        "time" : {
+          "start" : 1743446873351,
+          "stop" : 1743446873433,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c6bd4b68d7e05b7c4b74fd799a15ac98"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }
