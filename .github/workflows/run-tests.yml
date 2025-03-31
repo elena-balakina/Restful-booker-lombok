@@ -29,6 +29,10 @@ jobs:
         continue-on-error: true
         run: mvn clean test -Dtest='com.restfulbooker.api.**'
 
+      - name: Generate Allure report
+        if: always()
+        run: mvn allure:report
+
       # Загружаем историю Allure Report из специальной ветки gh-pages
       # doc: https://allurereport.org/docs/integrations-github/
       - name: Load test report history
