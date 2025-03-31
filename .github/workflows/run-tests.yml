@@ -27,3 +27,12 @@ jobs:
 
       - name: Run tests with Maven # запускаем тесты
         run: mvn clean test -Dtest='com.restfulbooker.api.**'
+
+      - name: Generate Allure report # генерируем Allure report
+        run: mvn allure:report
+
+      - name: Upload Allure Report as artifact # загружем Allure report в Actions → Run → Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: target/site/allure-maven-plugin
