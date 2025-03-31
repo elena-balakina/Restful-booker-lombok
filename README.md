@@ -1,6 +1,9 @@
-# Restful-booker API Tests (with Lombok & Allure)
+# 📦 Restful-booker API Tests
 
-[![Allure Report](https://img.shields.io/badge/Allure-Report-blue?logo=allure&style=for-the-badge)](https://elena-balakina.github.io/Restful-booker-lombok/)
+[![Build Status](https://github.com/elena-balakina/Restful-booker-lombok/actions/workflows/run-tests.yml/badge.svg)](https://github.com/elena-balakina/Restful-booker-lombok/actions)
+[![Allure Report](https://img.shields.io/badge/Allure-Report-blueviolet?logo=allure&style=flat-square)](https://elena-balakina.github.io/Restful-booker-lombok/)
+
+---
 
 Автоматизированные API тесты для [Restful Booker](https://restful-booker.herokuapp.com/) с использованием:
 - **Java 17**
@@ -16,3 +19,17 @@
 
 ```bash
 mvn test -Dtest='com.restfulbooker.api.**'
+
+```
+
+---
+
+## ⚙️ CI/CD Pipeline Overview
+
+```mermaid
+graph TD;
+    Code[🧠 Push Code] --> Test[🧪 Run API Tests];
+    Test --> Allure[📊 Generate Allure Report];
+    Allure --> Pages[🌐 Publish to GitHub Pages];
+    Test --> GH[🔁 Save History to Artifact];
+    GH --> Allure;
