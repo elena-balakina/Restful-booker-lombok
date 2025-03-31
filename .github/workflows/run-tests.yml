@@ -36,20 +36,24 @@ jobs:
         run: mvn clean test -Dtest='com.restfulbooker.api.**'
 
       - name: Restore history into allure-results # получаем историю запусков тестов
+        if: always() # важно сохранять историю и генерировать отчет, даже если тесты упали
         run: |
           mkdir -p target/allure-results/history
           cp -r history/* target/allure-results/history || true
 
       - name: Generate Allure report # генерируем Allure report
+        if: always()
         run: mvn allure:report
 
       - name: Save history for next builds # сохраняем историю
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-history
           path: target/site/allure-maven-plugin/history
 
       - name: Deploy Allure report to GitHub Pages # деплоим отчет
+        if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
