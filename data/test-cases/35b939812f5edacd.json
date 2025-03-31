@@ -1,12 +1,12 @@
 {
-  "uid" : "37dee35f38a6f8c6",
-  "name" : "Получение бронирования по Id",
-  "fullName" : "com.restfulbooker.api.ApiStatusCodeTest.getBookingIdShouldReturn200",
-  "historyId" : "daacbfcd1a978746fc8f5c08b37a7c8a",
+  "uid" : "35b939812f5edacd",
+  "name" : "Получение бронирования по Id с невалидным media type",
+  "fullName" : "com.restfulbooker.api.ApiStatusCodeTest.getBookingIdWithBadAcceptShouldReturn418",
+  "historyId" : "7ac63fb7306837f2fcd4fb2b81ead08e",
   "time" : {
-    "start" : 1743445861796,
-    "stop" : 1743445861863,
-    "duration" : 67
+    "start" : 1743446529326,
+    "stop" : 1743446529706,
+    "duration" : 380
   },
   "description" : "",
   "status" : "passed",
@@ -15,20 +15,20 @@
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
+    "name" : "story",
+    "value" : "Negative Get Booking by Id"
+  }, {
     "name" : "feature",
     "value" : "Get Booking by Id"
   }, {
     "name" : "epic",
     "value" : "Booking API"
   }, {
-    "name" : "story",
-    "value" : "Positive Get Booking by Id"
-  }, {
     "name" : "host",
-    "value" : "fv-az1390-406"
+    "value" : "fv-az1701-508"
   }, {
     "name" : "thread",
-    "value" : "2008@fv-az1390-406.main(1)"
+    "value" : "1955@fv-az1701-508.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -43,7 +43,7 @@
     "value" : "com.restfulbooker.api.ApiStatusCodeTest"
   }, {
     "name" : "testMethod",
-    "value" : "getBookingIdShouldReturn200"
+    "value" : "getBookingIdWithBadAcceptShouldReturn418"
   }, {
     "name" : "suite",
     "value" : "com.restfulbooker.api.ApiStatusCodeTest"
@@ -64,6 +64,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "37dee35f38a6f8c6.json",
+  "source" : "35b939812f5edacd.json",
   "parameterValues" : [ ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "9ac11d117a80bcd9",
+  "uid" : "fa7a33a94755f83e",
   "name" : "Авторизация с невалидным паролем",
   "fullName" : "com.restfulbooker.api.ApiAuthTest.authApiShouldReturn400ForInvalidPassword",
   "historyId" : "c5478043768ee21fd4e218d85333fe3f",
   "time" : {
-    "start" : 1743445860892,
-    "stop" : 1743445860981,
-    "duration" : 89
+    "start" : 1743446527680,
+    "stop" : 1743446528067,
+    "duration" : 387
   },
   "description" : "",
   "status" : "passed",
@@ -25,10 +25,10 @@
     "value" : "Authentication"
   }, {
     "name" : "host",
-    "value" : "fv-az1390-406"
+    "value" : "fv-az1701-508"
   }, {
     "name" : "thread",
-    "value" : "2008@fv-az1390-406.main(1)"
+    "value" : "1955@fv-az1701-508.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -64,6 +64,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9ac11d117a80bcd9.json",
+  "source" : "fa7a33a94755f83e.json",
   "parameterValues" : [ ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "a1e7328cb175b092",
-  "name" : "Получение списка бронирований",
-  "fullName" : "com.restfulbooker.api.ApiStatusCodeTest.getBookingShouldReturn200",
-  "historyId" : "c4e40dae146043e44e30629035784b53",
+  "uid" : "b1abffc42c813f0f",
+  "name" : "Авторизация с валидными данными",
+  "fullName" : "com.restfulbooker.api.ApiAuthTest.authApiShouldReturnToken",
+  "historyId" : "11627492afa0c1868f7707026f8f26b",
   "time" : {
-    "start" : 1743445861240,
-    "stop" : 1743445861418,
-    "duration" : 178
+    "start" : 1743446525447,
+    "stop" : 1743446527648,
+    "duration" : 2201
   },
   "description" : "",
   "status" : "passed",
@@ -15,20 +15,20 @@
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Get Bookings"
-  }, {
     "name" : "story",
-    "value" : "Positive Get Bookings"
+    "value" : "Positive Authentication"
   }, {
     "name" : "epic",
     "value" : "Booking API"
   }, {
+    "name" : "feature",
+    "value" : "Authentication"
+  }, {
     "name" : "host",
-    "value" : "fv-az1390-406"
+    "value" : "fv-az1701-508"
   }, {
     "name" : "thread",
-    "value" : "2008@fv-az1390-406.main(1)"
+    "value" : "1955@fv-az1701-508.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -37,16 +37,16 @@
     "value" : "java"
   }, {
     "name" : "package",
-    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
+    "value" : "com.restfulbooker.api.ApiAuthTest"
   }, {
     "name" : "testClass",
-    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
+    "value" : "com.restfulbooker.api.ApiAuthTest"
   }, {
     "name" : "testMethod",
-    "value" : "getBookingShouldReturn200"
+    "value" : "authApiShouldReturnToken"
   }, {
     "name" : "suite",
-    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
+    "value" : "com.restfulbooker.api.ApiAuthTest"
   }, {
     "name" : "severity",
     "value" : "critical"
@@ -64,6 +64,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a1e7328cb175b092.json",
+  "source" : "b1abffc42c813f0f.json",
   "parameterValues" : [ ]
 }
