@@ -25,46 +25,31 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Download previous Allure history
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-history
-          path: history
-        continue-on-error: true
-
       - name: Run tests with Maven # запускаем тесты
+        continue-on-error: true
         run: mvn clean test -Dtest='com.restfulbooker.api.**'
 
-      - name: Restore history into allure-results # получаем историю запусков тестов
-        if: always() # важно сохранять историю и генерировать отчет, даже если тесты упали
-        run: |
-          mkdir -p target/allure-results/history
-          cp -r history/* target/allure-results/history || true
-
-      - name: Generate Allure report # генерируем Allure report
+      # Загружаем историю Allure Report из специальной ветки gh-pages
+      # doc: https://allurereport.org/docs/integrations-github/
+      - name: Load test report history
+        uses: actions/checkout@v2
         if: always()
-        run: mvn allure:report
-
-      - name: Save history for next builds # сохраняем историю
-        if: always()
-        uses: actions/upload-artifact@v4
+        continue-on-error: true
         with:
-          name: allure-history
-          path: target/site/allure-maven-plugin/history
+          ref: gh-pages
+          path: gh-pages
 
-      - name: Deploy Allure report to GitHub Pages # деплоим отчет
+      - name: Build test report
+        uses: simple-elf/allure-report-action@v1.7
         if: always()
+        with:
+          gh_pages: gh-pages
+          allure_history: allure-history
+          allure_results: target/allure-results
+
+      - name: Publish test report
         uses: peaceiris/actions-gh-pages@v3
+        if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/site/allure-maven-plugin
-
-      - name: 📎 Print link to Allure report
-        if: always()
-        run: |
-          echo "Allure Report: https://elena-balakina.github.io/Restful-booker-lombok/"
-
-      - name: Add report link to summary
-        if: always()
-        run: |
-          echo "### ✅ [Click to view Allure Report](https://elena-balakina.github.io/Restful-booker-lombok/)" >> $GITHUB_STEP_SUMMARY
+          publish_branch: gh-pages
