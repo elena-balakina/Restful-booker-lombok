@@ -25,14 +25,32 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
+      - name: Download previous Allure history
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-history
+          path: history
+        continue-on-error: true
+
       - name: Run tests with Maven # запускаем тесты
         run: mvn clean test -Dtest='com.restfulbooker.api.**'
 
-      - name: Generate Allure report # генерируем Allure report
+      - name: Restore history into allure-results
+        run: |
+          mkdir -p target/allure-results/history
+          cp -r history/* target/allure-results/history || true
+
+      - name: Generate Allure report
         run: mvn allure:report
 
-      - name: Upload Allure Report as artifact # загружем Allure report в Actions → Run → Artifacts
+      - name: Save history for next builds
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
-          path: target/site/allure-maven-plugin
+          name: allure-history
+          path: target/site/allure-maven-plugin/history
+
+      - name: Deploy Allure report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: target/site/allure-maven-plugin
