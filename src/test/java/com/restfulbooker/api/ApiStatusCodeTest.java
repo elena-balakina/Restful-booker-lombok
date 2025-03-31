@@ -9,6 +9,7 @@ import com.restfulbooker.models.response.AuthResponse;
 import com.restfulbooker.models.response.BookingResponse;
 import io.restassured.response.Response;
 import org.approvaltests.Approvals;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class ApiStatusCodeTest {
@@ -28,8 +29,7 @@ public class ApiStatusCodeTest {
     @Test
     public void getBookingIdWithBadAcceptShouldReturn418() {
         Response response = BookingApi.getBooking(1, "text/plain");
-
-        Approvals.verify(response.getStatusCode());
+        Assertions.assertEquals(418, response.statusCode(), "Expected status code is 418, but found " + response.statusCode());
     }
 
     @Test
