@@ -61,10 +61,10 @@ jobs:
 
       - name: 📎 Print link to Allure report
         if: always()
-        run:
-          echo "🔗 Allure Report: https://elena-balakina.github.io/Restful-booker-lombok/"
+        run: |
+          echo "Allure Report: https://elena-balakina.github.io/Restful-booker-lombok/"
 
-      - name: 📋 Add report link to summary
+      - name: Add report link to summary
         if: always()
         run: |
           echo "### ✅ [Click to view Allure Report](https://elena-balakina.github.io/Restful-booker-lombok/)" >> $GITHUB_STEP_SUMMARY
