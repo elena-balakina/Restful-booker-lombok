@@ -1,12 +1,12 @@
 {
-  "uid" : "cc5a35981f85c69d",
-  "name" : "Авторизация с валидными данными",
-  "fullName" : "com.restfulbooker.api.ApiAuthTest.authApiShouldReturnToken",
-  "historyId" : "11627492afa0c1868f7707026f8f26b",
+  "uid" : "4256110ab87818c4",
+  "name" : "Получение списка бронирований",
+  "fullName" : "com.restfulbooker.api.ApiStatusCodeTest.getBookingShouldReturn200",
+  "historyId" : "c4e40dae146043e44e30629035784b53",
   "time" : {
-    "start" : 1743446869654,
-    "stop" : 1743446872444,
-    "duration" : 2790
+    "start" : 1743447270303,
+    "stop" : 1743447270433,
+    "duration" : 130
   },
   "description" : "",
   "status" : "passed",
@@ -16,19 +16,19 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "story",
-    "value" : "Positive Authentication"
+    "value" : "Positive Get Bookings"
   }, {
     "name" : "epic",
     "value" : "Booking API"
   }, {
     "name" : "feature",
-    "value" : "Authentication"
+    "value" : "Get Bookings"
   }, {
     "name" : "host",
-    "value" : "fv-az1912-887"
+    "value" : "fv-az1065-191"
   }, {
     "name" : "thread",
-    "value" : "2010@fv-az1912-887.main(1)"
+    "value" : "1963@fv-az1065-191.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -37,16 +37,16 @@
     "value" : "java"
   }, {
     "name" : "package",
-    "value" : "com.restfulbooker.api.ApiAuthTest"
+    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
   }, {
     "name" : "testClass",
-    "value" : "com.restfulbooker.api.ApiAuthTest"
+    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
   }, {
     "name" : "testMethod",
-    "value" : "authApiShouldReturnToken"
+    "value" : "getBookingShouldReturn200"
   }, {
     "name" : "suite",
-    "value" : "com.restfulbooker.api.ApiAuthTest"
+    "value" : "com.restfulbooker.api.ApiStatusCodeTest"
   }, {
     "name" : "severity",
     "value" : "critical"
@@ -64,6 +64,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "cc5a35981f85c69d.json",
+  "source" : "4256110ab87818c4.json",
   "parameterValues" : [ ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "335b7743431c23ba",
+  "uid" : "11d87302ac1d248c",
   "name" : "Создание нового бронирования",
   "fullName" : "com.restfulbooker.api.ApiCreateBookingTest.postBookingAndGetBooking",
   "historyId" : "4fe2f1ed7043e780ffcbf6bd1bfff849",
   "time" : {
-    "start" : 1743446872583,
-    "stop" : 1743446872782,
-    "duration" : 199
+    "start" : 1743447270113,
+    "stop" : 1743447270295,
+    "duration" : 182
   },
   "description" : "",
   "status" : "passed",
@@ -25,10 +25,10 @@
     "value" : "Create Booking"
   }, {
     "name" : "host",
-    "value" : "fv-az1912-887"
+    "value" : "fv-az1065-191"
   }, {
     "name" : "thread",
-    "value" : "2010@fv-az1912-887.main(1)"
+    "value" : "1963@fv-az1065-191.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -64,6 +64,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "335b7743431c23ba.json",
+  "source" : "11d87302ac1d248c.json",
   "parameterValues" : [ ]
 }

@@ -2,116 +2,116 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "fv-az1912-887",
+    "name" : "fv-az1065-191",
     "children" : [ {
-      "name" : "2010@fv-az1912-887.main(1)",
+      "name" : "1963@fv-az1065-191.main(1)",
       "children" : [ {
-        "name" : "Создание бронирования с валидными данными",
-        "uid" : "5b953d82da5699ff",
-        "parentUid" : "3ffd60b9954d377aa52bd68ac720891e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1743446873062,
-          "stop" : 1743446873141,
-          "duration" : 79
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Получение бронирования по Id",
-        "uid" : "7092c12b200d1cf",
-        "parentUid" : "3ffd60b9954d377aa52bd68ac720891e",
-        "status" : "failed",
-        "time" : {
-          "start" : 1743446873351,
-          "stop" : 1743446873433,
-          "duration" : 82
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Удаление бронирования по Id",
-        "uid" : "accadc36f9726c71",
-        "parentUid" : "3ffd60b9954d377aa52bd68ac720891e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1743446873145,
-          "stop" : 1743446873348,
-          "duration" : 203
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Авторизация с валидными данными",
-        "uid" : "cc5a35981f85c69d",
-        "parentUid" : "3ffd60b9954d377aa52bd68ac720891e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1743446869654,
-          "stop" : 1743446872444,
-          "duration" : 2790
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Авторизация с невалидным паролем",
-        "uid" : "7ae2993637eb5a87",
-        "parentUid" : "3ffd60b9954d377aa52bd68ac720891e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1743446872483,
-          "stop" : 1743446872571,
-          "duration" : 88
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Получение бронирования по Id с невалидным media type",
-        "uid" : "a01b591a11ca4e5c",
-        "parentUid" : "3ffd60b9954d377aa52bd68ac720891e",
-        "status" : "failed",
+        "uid" : "74540735dc52f0f0",
+        "parentUid" : "d30a375a1e4a9b33134e1ee6ad5442d6",
+        "status" : "passed",
         "time" : {
-          "start" : 1743446872966,
-          "stop" : 1743446873046,
-          "duration" : 80
+          "start" : 1743447270437,
+          "stop" : 1743447270476,
+          "duration" : 39
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Получение списка бронирований",
-        "uid" : "10255a2704faed97",
-        "parentUid" : "3ffd60b9954d377aa52bd68ac720891e",
+        "uid" : "4256110ab87818c4",
+        "parentUid" : "d30a375a1e4a9b33134e1ee6ad5442d6",
         "status" : "passed",
         "time" : {
-          "start" : 1743446872803,
-          "stop" : 1743446872962,
-          "duration" : 159
+          "start" : 1743447270303,
+          "stop" : 1743447270433,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация с валидными данными",
+        "uid" : "d84dca65ec7181dc",
+        "parentUid" : "d30a375a1e4a9b33134e1ee6ad5442d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1743447267563,
+          "stop" : 1743447270005,
+          "duration" : 2442
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Получение бронирования по Id",
+        "uid" : "9e503468e9ba5e7b",
+        "parentUid" : "d30a375a1e4a9b33134e1ee6ad5442d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1743447270682,
+          "stop" : 1743447270753,
+          "duration" : 71
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Создание нового бронирования",
-        "uid" : "335b7743431c23ba",
-        "parentUid" : "3ffd60b9954d377aa52bd68ac720891e",
+        "uid" : "11d87302ac1d248c",
+        "parentUid" : "d30a375a1e4a9b33134e1ee6ad5442d6",
         "status" : "passed",
         "time" : {
-          "start" : 1743446872583,
-          "stop" : 1743446872782,
-          "duration" : 199
+          "start" : 1743447270113,
+          "stop" : 1743447270295,
+          "duration" : 182
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Создание бронирования с валидными данными",
+        "uid" : "d1c3e14218b9b08b",
+        "parentUid" : "d30a375a1e4a9b33134e1ee6ad5442d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1743447270481,
+          "stop" : 1743447270534,
+          "duration" : 53
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Удаление бронирования по Id",
+        "uid" : "1985b50a0c0d750",
+        "parentUid" : "d30a375a1e4a9b33134e1ee6ad5442d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1743447270538,
+          "stop" : 1743447270679,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация с невалидным паролем",
+        "uid" : "799f0bc9490e6031",
+        "parentUid" : "d30a375a1e4a9b33134e1ee6ad5442d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1743447270037,
+          "stop" : 1743447270102,
+          "duration" : 65
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3ffd60b9954d377aa52bd68ac720891e"
+      "uid" : "d30a375a1e4a9b33134e1ee6ad5442d6"
     } ],
-    "uid" : "c279237110488c351668f49dae053a23"
+    "uid" : "429ad01de9e16a115667afdce6659ecd"
   } ]
 }
