@@ -35,21 +35,21 @@ jobs:
       - name: Run tests with Maven # запускаем тесты
         run: mvn clean test -Dtest='com.restfulbooker.api.**'
 
-      - name: Restore history into allure-results
+      - name: Restore history into allure-results # получаем историю запусков тестов
         run: |
           mkdir -p target/allure-results/history
           cp -r history/* target/allure-results/history || true
 
-      - name: Generate Allure report
+      - name: Generate Allure report # генерируем Allure report
         run: mvn allure:report
 
-      - name: Save history for next builds
+      - name: Save history for next builds # сохраняем историю
         uses: actions/upload-artifact@v4
         with:
           name: allure-history
           path: target/site/allure-maven-plugin/history
 
-      - name: Deploy Allure report to GitHub Pages
+      - name: Deploy Allure report to GitHub Pages # деплоим отчет
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
